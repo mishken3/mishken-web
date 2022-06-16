@@ -5,7 +5,7 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import { Wrapper } from './components';
-import { Main } from './pages';
+import { Contacts, Main } from './pages';
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Wrapper />}>
           <Route index element={<Main />} />
+          <Route path="contacts" element={<Contacts />} />
         </Route>
       </Routes>
     </BrowserRouter>
