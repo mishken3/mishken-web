@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-size: 20px;
+
+  & *::selection {
+    color: #ff4855;
+  }
+  & *::-moz-selection {
+    color: #ff4855;
+  }
+
+  & a {
+    color: rgba(0, 0, 0, 0.75);
+    text-decoration: none;
+  }
+}
