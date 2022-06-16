@@ -1,0 +1,38 @@
+.about {
+  padding-left: 1rem;
+
+  &__hire {
+    color: #ff4855;
+    text-decoration: underline;
+
+    &::selection {
+      color: black;
+    }
+    &::-moz-selection {
+      color: black;
+    }
+  }
+
+  &__skills {
+    &_button {
+      background: rgba(220, 220, 220, 0.35);
+      border: none;
+      outline: none;
+      cursor: pointer;
+      color: #ff4855;
+    }
+
+    &_content {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      flex-wrap: wrap;
+
+      padding: 0;
+
+      & > li {
+        list-style-type: none;
+      }
+    }
+  }
+}

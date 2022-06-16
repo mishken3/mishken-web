@@ -14,7 +14,13 @@ export const Wrapper = () => {
           <div className={styles.page__layout_nav}>
             <NavBar />
           </div>
-          <img alt="bill" src="https://www.fillmurray.com/g/200/300" />
+          <div>
+            <img
+              className={styles.page__photo}
+              alt="bill"
+              src="https://www.fillmurray.com/g/200/300"
+            />
+          </div>
           <Outlet />
         </div>
       </div>
