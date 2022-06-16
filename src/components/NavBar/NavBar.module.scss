@@ -1,17 +1,13 @@
-.navbar {
-  border: 3px solid peachpuff;
+.nav {
+  &__links {
+    display: flex;
+    flex-direction: column;
 
-  width: 100px;
-}
+    gap: 0.5rem;
 
-.nav__links {
-  display: flex;
-  flex-direction: column;
-
-  gap: 0.5rem;
-
-  & > a {
-    color: black;
-    text-decoration: none;
+    & > a {
+      color: black;
+      text-decoration: none;
+    }
   }
 }

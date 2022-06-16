@@ -5,8 +5,7 @@ import styles from './NavBar.module.scss';
 
 export const NavBar = () => {
   return (
-    <div className={styles.navbar}>
-      <p>NavBar</p>
+    <div className={styles.nav}>
       <div className={styles.nav__links}>
         <Link to="/portfolio">portfolio</Link>
         <Link to="/about">about</Link>
