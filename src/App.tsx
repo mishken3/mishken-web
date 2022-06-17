@@ -6,11 +6,14 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import { Wrapper } from './components';
 import { About, Contacts, Main, Photos, Portfolio } from './pages';
+import { NotFound } from './pages/NotFound';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="*" element={<NotFound />} />
+
         <Route path="/" element={<Wrapper />}>
           <Route index element={<Main />} />
           <Route path="about" element={<About />} />

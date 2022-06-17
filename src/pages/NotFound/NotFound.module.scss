@@ -1,0 +1,34 @@
+.notfound {
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+
+  &__img {
+    filter: grayscale(100%);
+    width: 500px;
+  }
+
+  &__text {
+    color: #ff4855;
+
+    &::selection {
+      color: black;
+    }
+
+    &::-moz-selection {
+      color: black;
+    }
+  }
+
+  &__button {
+    text-decoration: underline;
+  }
+}
