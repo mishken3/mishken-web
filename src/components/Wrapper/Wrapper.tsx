@@ -1,6 +1,7 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 
+import { bw } from '../../assets/photos';
 import { Header } from '../Header';
 import { NavBar } from '../NavBar';
 import styles from './Wrapper.module.scss';
@@ -15,11 +16,7 @@ export const Wrapper = () => {
             <NavBar />
           </div>
           <div>
-            <img
-              className={styles.page__photo}
-              alt="bill"
-              src="https://www.fillmurray.com/g/200/300"
-            />
+            <img className={styles.page__photo} alt="black and white from the back" src={bw} />
           </div>
           <Outlet />
         </div>
