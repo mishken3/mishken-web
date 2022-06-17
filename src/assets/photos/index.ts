@@ -1,4 +1,4 @@
-export { default as bw } from './bw.jpg';
-export { default as notfound } from './notfound.jpg';
-export { default as park } from './park.jpg';
-export { default as polaroid } from './polaroid.jpg';
+export { default as bw } from './bw.webp';
+export { default as notfound } from './notfound.webp';
+export { default as park } from './park.webp';
+export { default as polaroid } from './polaroid.webp';
