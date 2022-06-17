@@ -1,0 +1,40 @@
+.portfolio {
+  width: 100%;
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    width: 100%;
+    padding-left: 1rem;
+  }
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  box-sizing: border-box;
+  width: 48.5%;
+  height: 130px;
+
+  border-right: 1px solid gainsboro;
+  border-left: 1px solid gainsboro;
+
+  &__name {
+    margin: 0;
+  }
+
+  &__description {
+    margin-top: 0px;
+    padding: 0 10px;
+
+    font-size: 13px;
+  }
+
+  &__links {
+    font-size: 12px;
+  }
+}
