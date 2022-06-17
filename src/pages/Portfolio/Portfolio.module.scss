@@ -25,12 +25,20 @@
 
   &__name {
     margin: 0;
+    padding-bottom: 2px;
+
+    border-bottom: 1px solid gainsboro;
   }
 
   &__description {
     margin-top: 0px;
     padding: 0 10px;
 
+    font-size: 13px;
+  }
+
+  &__tools {
+    margin: 0;
     font-size: 13px;
   }
 

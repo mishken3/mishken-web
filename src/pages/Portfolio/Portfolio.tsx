@@ -5,18 +5,23 @@ import styles from './Portfolio.module.scss';
 
 export const Portfolio = () => {
   const projectsComp = projectsData.map((project) => {
+    const isGlobalLinkExist = Object.keys(project).includes('global');
+
     return (
       <div key={project.name} className={styles.project}>
         <h4 className={styles.project__name}>{project.name}</h4>
         <p className={styles.project__description}>{project.desc}</p>
+        <p className={styles.project__tools}>{project.tools}</p>
         <div className={styles.project__links}>
           <a href={project.github} target="_blank">
             Github
           </a>
-          &nbsp; | &nbsp;
-          <a href={project.global} target="_blank">
-            Link
-          </a>
+          &nbsp;|&nbsp;
+          {isGlobalLinkExist === false ? null : (
+            <a href={project.global} target="_blank">
+              Link
+            </a>
+          )}
         </div>
       </div>
     );
