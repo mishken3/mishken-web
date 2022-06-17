@@ -5,7 +5,7 @@ import styles from './Contacts.module.scss';
 export const Contacts = () => {
   return (
     <div className={styles.contacts}>
-      <h3>Contacts</h3>
+      <h3>contacts</h3>
 
       <div className={styles.contacts__links}>
         <a href="https://t.me/mishken">Telegram</a>

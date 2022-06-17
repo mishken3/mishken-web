@@ -12,7 +12,7 @@ export const About = () => {
   return (
     <>
       <div>
-        <h3 className={styles.title}>About page</h3>
+        <h3 className={styles.title}>about</h3>
         <article className={styles.about}>
           <p>Привет! Я Миша, мне 24, а родом из Москвы.</p>
           <p>
