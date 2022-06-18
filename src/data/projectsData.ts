@@ -3,8 +3,8 @@ export const projectsData = [
     name: 'Personal website',
     desc: 'You are here',
     tools: 'React, React-Router, TS, SASS',
-    github: 'https://github.com/mishken3/my-blockchain-app',
-    global: 'https://blockchain-calculator.vercel.app/',
+    github: 'https://github.com/mishken3/mishken-web',
+    global: 'https://mishken.vercel.app/',
   },
   {
     name: 'Blockchain calculator',
@@ -49,7 +49,7 @@ export const projectsData = [
   },
   {
     name: 'Difference file generator',
-    desc: 'Compares two config JSON/YAML files and shows difference in several ways',
+    desc: 'Compares two config JSON/YAML files and shows difference in several ways via CLI',
     tools: 'JS, CLI, Linter, Tests, CI',
     github: 'https://github.com/mishken3/frontend-project-lvl2',
   },

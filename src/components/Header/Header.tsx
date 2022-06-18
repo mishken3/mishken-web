@@ -7,7 +7,7 @@ export const Header = () => {
   return (
     <div className={styles.header}>
       <Link to="/" className={styles.header__home}>
-        HOME
+        M
       </Link>
     </div>
   );
