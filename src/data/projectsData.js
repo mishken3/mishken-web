@@ -1,38 +1,45 @@
 export const projectsData = [
   {
+    name: 'Personal website',
+    desc: 'You are here',
+    tools: 'React, React-Router, TS, SASS',
+    github: 'https://github.com/mishken3/my-blockchain-app',
+    global: 'https://blockchain-calculator.vercel.app/',
+  },
+  {
     name: 'Blockchain calculator',
     desc: 'Blockchain calculator with online currencies',
-    tools: 'React, Redux, TS, Axios',
+    tools: 'React, Redux, TS, SASS, Axios',
     github: 'https://github.com/mishken3/my-blockchain-app',
-    global: 'https://blockchain-calculator.surge.sh/',
+    global: 'https://blockchain-calculator.vercel.app/',
   },
   {
     name: 'Todo: React + Redux',
     desc: 'Modern Todo app',
-    tools: 'React, R  edux, TS, Bootstrap',
+    tools: 'React, Redux, TS, Bootstrap',
     github: 'https://github.com/mishken3/Todo',
-    global: 'https://mishken-todo-ts.surge.sh/',
+    global: 'https://todo-ts-six.vercel.app/',
   },
   {
     name: 'Vanilla Todo',
     desc: 'Todo app on Vanilla JS with CSS',
     tools: 'HTML, CSS, JS',
     github: 'https://github.com/mishken3/Todo-Vanilla-JS',
-    global: 'https://little-todo-vanilla-app.surge.sh/',
+    global: 'https://todo-vanilla-js-seven.vercel.app/',
   },
   {
     name: 'MNTN',
     desc: 'Landing page about traveling pleasure',
     tools: 'HTML, CSS, Mobile Adaptive',
     github: 'https://github.com/mishken3/mntn-project',
-    global: 'https://mntn-landing.surge.sh/',
+    global: 'https://mntn-landing.vercel.app/',
   },
   {
     name: 'LightMan',
     desc: 'Static landing page',
     tools: 'HTML, CSS, Mobile Adaptive',
     github: 'https://github.com/mishken3/LightMan',
-    global: 'https://light-man-landing.surge.sh/',
+    global: 'https://light-man-landing.vercel.app/',
   },
   {
     name: 'BrainGames',
@@ -42,8 +49,8 @@ export const projectsData = [
   },
   {
     name: 'Difference file generator',
-    desc: 'Compares two config files and shows difference in several ways',
-    tools: 'JS, CLI, Linter, Tests, CI | Supports JSON, YML/YAML',
+    desc: 'Compares two config JSON/YAML files and shows difference in several ways',
+    tools: 'JS, CLI, Linter, Tests, CI',
     github: 'https://github.com/mishken3/frontend-project-lvl2',
   },
 ];
