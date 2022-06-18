@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import styles from './NavBar.module.scss';
 
@@ -7,10 +7,10 @@ export const NavBar = () => {
   return (
     <div className={styles.nav}>
       <div className={styles.nav__links}>
-        <Link to="/about">about</Link>
-        <Link to="/portfolio">portfolio</Link>
-        <Link to="/photos">photos</Link>
-        <Link to="/contacts">contacts</Link>
+        <NavLink to="/about">about</NavLink>
+        <NavLink to="/portfolio">portfolio</NavLink>
+        <NavLink to="/photos">photos</NavLink>
+        <NavLink to="/contacts">contacts</NavLink>
       </div>
     </div>
   );

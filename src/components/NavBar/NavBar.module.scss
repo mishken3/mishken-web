@@ -5,4 +5,8 @@
 
     gap: 0.5rem;
   }
+
+  &__links > a:global.active {
+    color: rgba(0, 0, 0, 0.95);
+  }
 }
