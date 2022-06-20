@@ -12,6 +12,8 @@
 
     &_photo {
       max-width: 350px;
+      min-width: 300px;
+
       &_img {
         width: 100%;
       }
