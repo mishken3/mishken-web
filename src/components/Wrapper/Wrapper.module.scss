@@ -1,11 +1,20 @@
 @use '../../assets/styles/colors.scss' as *;
+@import '../../assets/styles/breakpoints.scss';
 
 .page {
   padding: 0 50px;
 
+  @include for-desktop {
+    padding-bottom: 35px;
+  }
+
   &__layout {
     display: flex;
     gap: 150px;
+
+    @include for-desktop {
+      gap: 100px;
+    }
 
     &_nav {
     }
@@ -13,6 +22,10 @@
     &_photo {
       max-width: 350px;
       min-width: 300px;
+
+      @include for-desktop {
+        max-width: 200px;
+      }
 
       &_img {
         width: 100%;

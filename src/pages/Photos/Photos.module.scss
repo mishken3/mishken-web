@@ -1,7 +1,14 @@
+@import '../../assets/styles/breakpoints.scss';
+
 .photos {
   &__components {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
+    @include for-desktop-small {
+      flex-direction: column-reverse;
+      gap: 1.5rem;
+    }
   }
 }

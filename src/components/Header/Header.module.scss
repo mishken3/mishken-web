@@ -1,10 +1,15 @@
 @use '../../assets/styles/colors.scss' as *;
+@import '../../assets/styles/breakpoints.scss';
 
 .header {
   height: 200px;
 
   display: flex;
   align-items: center;
+
+  @include for-desktop {
+    height: 100px;
+  }
 
   &__home {
     font-size: 2rem;
