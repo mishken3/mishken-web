@@ -5,8 +5,7 @@ import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import { Wrapper } from './components';
-import { About, Contacts, Main, Photos, Portfolio } from './pages';
-import { NotFound } from './pages/NotFound';
+import { About, Contacts, Main, NotFound, Photos, Portfolio } from './pages';
 
 function App() {
   return (

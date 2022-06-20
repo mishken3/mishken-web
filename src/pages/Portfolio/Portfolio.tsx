@@ -29,8 +29,6 @@ export const Portfolio = () => {
 
   return (
     <div className={styles.portfolio}>
-      <h3>portfolio</h3>
-
       <div className={styles.portfolio__content}>{projectsComp}</div>
     </div>
   );

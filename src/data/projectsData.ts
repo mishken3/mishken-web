@@ -14,8 +14,8 @@ export const projectsData = [
     global: 'https://blockchain-calculator.vercel.app/',
   },
   {
-    name: 'Todo: React + Redux',
-    desc: 'Modern Todo app',
+    name: 'Modern Todo',
+    desc: 'Todo app with React + Redux and Bootstrap styles',
     tools: 'React, Redux, TS, Bootstrap',
     github: 'https://github.com/mishken3/Todo',
     global: 'https://todo-ts-six.vercel.app/',

@@ -7,8 +7,6 @@ import styles from './Photos.module.scss';
 export const Photos = () => {
   return (
     <div className={styles.photos}>
-      <h3>photos</h3>
-
       <div className={styles.photos__components}>
         <Photo photoInfo={photosData.analog} />
         <Photo photoInfo={photosData.personal} />

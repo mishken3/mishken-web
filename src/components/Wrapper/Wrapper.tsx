@@ -1,5 +1,5 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation } from 'react-router-dom';
 
 import { bw } from '../../assets/photos';
 import { Header } from '../Header';
@@ -7,6 +7,8 @@ import { NavBar } from '../NavBar';
 import styles from './Wrapper.module.scss';
 
 export const Wrapper = () => {
+  const pageName = useLocation().pathname.slice(1);
+
   return (
     <>
       <div className={styles.page}>
@@ -15,10 +17,19 @@ export const Wrapper = () => {
           <div className={styles.page__layout_nav}>
             <NavBar />
           </div>
-          <div>
-            <img className={styles.page__photo} alt="black and white from the back" src={bw} />
+          <div className={styles.page__layout_photo}>
+            <img
+              className={styles.page__layout_photo_img}
+              alt="black and white from the back"
+              src={bw}
+            />
           </div>
-          <Outlet />
+          <div className={styles.page__layout_outlet}>
+            <h3>{pageName}</h3>
+            <div className={styles.page__layout_outlet_content}>
+              <Outlet />
+            </div>
+          </div>
         </div>
       </div>
     </>

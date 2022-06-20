@@ -1,12 +1,20 @@
+@use '../../assets/styles/colors.scss' as *;
+@import '../../assets/styles/breakpoints.scss';
+
 .nav {
   &__links {
     display: flex;
     flex-direction: column;
 
     gap: 0.5rem;
+
+    @include for-tablet-portrait-up {
+      flex-direction: row;
+      justify-content: space-around;
+    }
   }
 
   &__links > a:global.active {
-    color: rgba(0, 0, 0, 0.95);
+    color: $color__black_85;
   }
 }

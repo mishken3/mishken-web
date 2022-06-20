@@ -1,3 +1,5 @@
+@use '../../assets/styles/colors.scss' as *;
+
 .notfound {
   height: 100vh;
 
@@ -13,22 +15,26 @@
 
   &__img {
     filter: grayscale(100%);
-    width: 500px;
+    max-width: 500px;
   }
 
   &__text {
-    color: #ff4855;
+    color: $color__red;
 
     &::selection {
-      color: black;
+      color: $color__black_85;
     }
 
     &::-moz-selection {
-      color: black;
+      color: $color__black_85;
     }
   }
 
   &__button {
     text-decoration: underline;
+
+    &:hover {
+      color: $color__red;
+    }
   }
 }

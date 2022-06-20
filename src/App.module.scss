@@ -1,3 +1,6 @@
+@use './assets/styles/colors.scss' as *;
+@import './assets/styles/breakpoints.scss';
+
 body {
   margin: 0;
   font-family: 'Karla', sans-serif;
@@ -6,15 +9,25 @@ body {
 
   font-size: 20px;
 
-  & *::selection {
-    color: #ff4855;
-  }
-  & *::-moz-selection {
-    color: #ff4855;
+  @include for-phone-only {
+    font-size: 14px;
   }
 
+  & h3 {
+    color: $color__black_85;
+  }
+  & p {
+    color: $color__black_85;
+  }
   & a {
-    color: rgba(0, 0, 0, 0.75);
+    color: $color__black_75;
     text-decoration: none;
+  }
+
+  & *::selection {
+    color: $color__red;
+  }
+  & *::-moz-selection {
+    color: $color__red;
   }
 }

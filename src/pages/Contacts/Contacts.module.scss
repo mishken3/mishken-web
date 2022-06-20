@@ -1,13 +1,19 @@
+@use '../../assets/styles/colors.scss' as *;
+
 .contacts {
   &__links {
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
-
-    padding-left: 1rem;
   }
 
   &__links > a {
+    width: fit-content;
+
     text-decoration: underline;
+
+    &:hover {
+      color: $color__red;
+    }
   }
 }

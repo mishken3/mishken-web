@@ -1,31 +1,32 @@
-.about {
-  padding-left: 1rem;
+@use '../../assets/styles/colors.scss' as *;
 
+.about {
   &__hire {
-    color: #ff4855;
+    color: $color__red;
     text-decoration: underline;
 
     &::selection {
-      color: black;
+      color: $color__black_85;
     }
     &::-moz-selection {
-      color: black;
+      color: $color__black_85;
     }
   }
 
   &__skills {
     &_button {
-      background: rgba(220, 220, 220, 0.35);
+      background: $color__grey_35;
       border: none;
       outline: none;
       cursor: pointer;
-      color: #ff4855;
+      color: $color__red;
     }
 
     &_content {
       display: flex;
       flex-direction: row;
-      gap: 20px;
+      gap: 1.5rem;
+
       flex-wrap: wrap;
 
       padding: 0;
