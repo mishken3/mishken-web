@@ -3,25 +3,23 @@
 .page {
   padding: 0 50px;
 
-  & h3 {
-    color: $color__black_85;
-  }
-  & p {
-    color: $color__black_85;
-  }
-
   &__layout {
     display: flex;
     gap: 200px;
 
     &_nav {
-      display: flex;
-      flex-direction: column;
-      gap: 6rem;
     }
-  }
 
-  &__photo {
-    max-height: 600px;
+    &_photo {
+      width: 30%;
+      max-width: 350px;
+      &_img {
+        width: 100%;
+        min-width: 200px;
+      }
+    }
+
+    &_content {
+    }
   }
 }
