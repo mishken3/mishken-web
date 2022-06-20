@@ -1,4 +1,5 @@
 @use './assets/styles/colors.scss' as *;
+@import './assets/styles/breakpoints.scss';
 
 body {
   margin: 0;
@@ -7,6 +8,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   font-size: 20px;
+
+  @include for-phone-only {
+    font-size: 14px;
+  }
 
   & h3 {
     color: $color__black_85;

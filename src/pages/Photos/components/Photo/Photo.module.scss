@@ -16,6 +16,10 @@
     @include for-desktop-small {
       max-height: 300px;
     }
+
+    @include for-tablet-portrait-up {
+      max-height: 30rem;
+    }
   }
 
   &__description {

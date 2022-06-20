@@ -3,9 +3,10 @@
 
 .page {
   padding: 0 50px;
+  padding-bottom: 35px;
 
   @include for-desktop {
-    padding-bottom: 35px;
+    padding: 0 20px 35px;
   }
 
   &__layout {
@@ -16,15 +17,20 @@
       gap: 100px;
     }
 
-    &_nav {
+    @include for-tablet-portrait-up {
+      flex-direction: column;
+      gap: 50px;
+    }
+
+    @include for-phone-only {
+      gap: 15px;
     }
 
     &_photo {
       max-width: 350px;
-      min-width: 300px;
 
-      @include for-desktop {
-        max-width: 200px;
+      @include for-tablet-landscape-up {
+        display: none;
       }
 
       &_img {
@@ -35,8 +41,17 @@
     &_outlet {
       width: 70%;
 
+      @include for-tablet-portrait-up {
+        width: 100%;
+      }
+
       &_content {
         padding-left: 1rem;
+
+        @include for-tablet-portrait-up {
+          width: 100%;
+          padding-left: 0;
+        }
       }
     }
   }
