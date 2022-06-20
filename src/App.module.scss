@@ -8,13 +8,6 @@ body {
 
   font-size: 20px;
 
-  & *::selection {
-    color: $color__red;
-  }
-  & *::-moz-selection {
-    color: $color__red;
-  }
-
   & h3 {
     color: $color__black_85;
   }
@@ -24,5 +17,12 @@ body {
   & a {
     color: $color__black_75;
     text-decoration: none;
+  }
+
+  & *::selection {
+    color: $color__red;
+  }
+  & *::-moz-selection {
+    color: $color__red;
   }
 }

@@ -14,12 +14,12 @@
   }
 
   &__description {
-    margin: 0;
     font-size: 12px;
     color: $color__black_50;
-  }
-  &__description:hover {
-    cursor: pointer;
-    color: $color__red;
+
+    &:hover {
+      cursor: pointer;
+      color: $color__red;
+    }
   }
 }

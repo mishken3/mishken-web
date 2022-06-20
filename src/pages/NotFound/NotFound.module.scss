@@ -15,7 +15,7 @@
 
   &__img {
     filter: grayscale(100%);
-    width: 500px;
+    max-width: 500px;
   }
 
   &__text {
@@ -32,5 +32,9 @@
 
   &__button {
     text-decoration: underline;
+
+    &:hover {
+      color: $color__red;
+    }
   }
 }
