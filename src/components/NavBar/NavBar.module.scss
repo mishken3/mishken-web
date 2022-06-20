@@ -1,3 +1,5 @@
+@use '../../assets/styles/colors.scss' as *;
+
 .nav {
   &__links {
     display: flex;
@@ -7,6 +9,6 @@
   }
 
   &__links > a:global.active {
-    color: rgba(0, 0, 0, 0.95);
+    color: $color__black_95;
   }
 }

@@ -1,25 +1,27 @@
+@use '../../assets/styles/colors.scss' as *;
+
 .about {
   padding-left: 1rem;
 
   &__hire {
-    color: #ff4855;
+    color: $color__red;
     text-decoration: underline;
 
     &::selection {
-      color: black;
+      color: $color__black_95;
     }
     &::-moz-selection {
-      color: black;
+      color: $color__black_95;
     }
   }
 
   &__skills {
     &_button {
-      background: rgba(220, 220, 220, 0.35);
+      background: $color__grey_35;
       border: none;
       outline: none;
       cursor: pointer;
-      color: #ff4855;
+      color: $color__red;
     }
 
     &_content {

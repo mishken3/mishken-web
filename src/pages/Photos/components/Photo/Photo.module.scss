@@ -1,3 +1,5 @@
+@use '../../../../assets/styles/colors.scss' as *;
+
 .photo {
   display: flex;
   flex-direction: column;
@@ -14,10 +16,10 @@
   &__description {
     margin: 0;
     font-size: 12px;
-    color: rgba(0, 0, 0, 0.5);
+    color: $color__black_50;
   }
   &__description:hover {
     cursor: pointer;
-    color: #ff4855;
+    color: $color__red;
   }
 }

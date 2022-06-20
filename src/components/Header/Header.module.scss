@@ -1,3 +1,5 @@
+@use '../../assets/styles/colors.scss' as *;
+
 .header {
   height: 200px;
 
@@ -7,6 +9,6 @@
   &__home {
     font-size: 2rem;
 
-    color: rgba(0, 0, 0, 0.85);
+    color: $color__black_85;
   }
 }

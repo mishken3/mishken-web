@@ -1,3 +1,5 @@
+@use './assets/styles/colors.scss' as *;
+
 body {
   margin: 0;
   font-family: 'Karla', sans-serif;
@@ -7,14 +9,14 @@ body {
   font-size: 20px;
 
   & *::selection {
-    color: #ff4855;
+    color: $color__red;
   }
   & *::-moz-selection {
-    color: #ff4855;
+    color: $color__red;
   }
 
   & a {
-    color: rgba(0, 0, 0, 0.75);
+    color: $color__black_75;
     text-decoration: none;
   }
 }
