@@ -24,9 +24,11 @@ export const Wrapper = () => {
               src={bw}
             />
           </div>
-          <div className={styles.page__layout_content}>
-            <h3 className={styles.page__layout_content_pagename}>{pageName}</h3>
-            <Outlet />
+          <div className={styles.page__layout_outlet}>
+            <h3>{pageName}</h3>
+            <div className={styles.page__layout_outlet_content}>
+              <Outlet />
+            </div>
           </div>
         </div>
       </div>

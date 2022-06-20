@@ -1,8 +1,6 @@
 @use '../../assets/styles/colors.scss' as *;
 
 .about {
-  padding-left: 1rem;
-
   &__hire {
     color: $color__red;
     text-decoration: underline;
