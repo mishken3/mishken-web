@@ -10,6 +10,7 @@ export const Wrapper = () => {
   const pageName = useLocation().pathname.slice(1);
 
   return (
+    /** TODO: здесь <> не нужен  **/
     <>
       <div className={styles.page}>
         <Header />

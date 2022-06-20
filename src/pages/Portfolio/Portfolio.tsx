@@ -4,6 +4,7 @@ import { projectsData } from '../../data/projectsData';
 import styles from './Portfolio.module.scss';
 
 export const Portfolio = () => {
+  /** TODO: будет круто еще и типизировать projectsData **/
   const projectsComp = projectsData.map((project) => {
     const isGlobalLinkExist = Object.keys(project).includes('global');
 
@@ -17,6 +18,7 @@ export const Portfolio = () => {
             Github
           </a>
           &nbsp;|&nbsp;
+          {/* TODO: isGlobalLinkExist && (знак | и дальше ссылка)*/}
           {isGlobalLinkExist === false ? null : (
             <a href={project.global} target="_blank">
               Link

@@ -3,6 +3,7 @@ import React from 'react';
 import { resumeLink } from '../../data/resumeLink';
 import styles from './Contacts.module.scss';
 
+/** TODO: мелочь: можно без return  **/
 export const Contacts = () => {
   return (
     <div className={styles.contacts}>

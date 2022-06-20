@@ -1,5 +1,6 @@
 import { park, polaroid } from '../assets/photos';
 
+/** TODO: будет круто еще и типизировать **/
 export const photosData = {
   personal: {
     photo: park,

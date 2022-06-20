@@ -1,3 +1,4 @@
+/** TODO: будет круто еще и типизировать **/
 export const projectsData = [
   {
     name: 'Personal website',

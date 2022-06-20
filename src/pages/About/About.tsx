@@ -4,13 +4,18 @@ import { resumeLink } from '../../data/resumeLink';
 import styles from './About.module.scss';
 
 export const About = () => {
+  /* TODO: setIsOpen */
   const [isOpen, setOpen] = useState(false);
 
   const handlerSetOpen = () => {
+    /* TODO: тут  prevValue не нужно, так как всё будет синхронно
+        можно () => setIsOpen(!isOpen)
+      */
     setOpen((prevValue) => !prevValue);
   };
 
   return (
+    /** TODO: здесь <> не нужен  **/
     <>
       <article className={styles.about}>
         <p>Привет! Я Миша, мне 24, а родом из Москвы.</p>
@@ -21,6 +26,7 @@ export const About = () => {
             Hire me!
           </a>{' '}
           <button type="button" className={styles.about__skills_button} onClick={handlerSetOpen}>
+            {/* TODO: isOpen ? 'Hide' : 'Show'  */}
             {isOpen !== true ? 'Show' : 'Hide'} skills
           </button>
         </p>
