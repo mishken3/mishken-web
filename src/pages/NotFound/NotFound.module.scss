@@ -22,11 +22,11 @@
     color: $color__red;
 
     &::selection {
-      color: $color__black_95;
+      color: $color__black_85;
     }
 
     &::-moz-selection {
-      color: $color__black_95;
+      color: $color__black_85;
     }
   }
 
