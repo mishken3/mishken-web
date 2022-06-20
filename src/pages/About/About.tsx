@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 
+import { resumeLink } from '../../data/resumeLink';
 import styles from './About.module.scss';
 
 export const About = () => {
@@ -20,10 +21,7 @@ export const About = () => {
           </p>
           <p>
             А ещё я front-end разработчик.{' '}
-            <a
-              href="https://drive.google.com/file/d/1vEICefWPqk6adgcDr6KRFZxP0c0FzvQH/view"
-              target="_blank"
-              className={styles.about__hire}>
+            <a href={resumeLink} target="_blank" className={styles.about__hire}>
               Hire me!
             </a>{' '}
             <button className={styles.about__skills_button} onClick={handlerSetOpen}>
