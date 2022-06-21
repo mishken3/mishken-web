@@ -1,11 +1,11 @@
 import React from 'react';
 
+import { ProjectData } from '../../data/data.types';
 import { projectsData } from '../../data/projectsData';
 import styles from './Portfolio.module.scss';
 
 export const Portfolio = () => {
-  /** TODO: будет круто еще и типизировать projectsData **/
-  const projectsComp = projectsData.map((project) => {
+  const projectsComp = projectsData.map((project: ProjectData) => {
     const isGlobalLinkExist = Object.keys(project).includes('global');
 
     return (

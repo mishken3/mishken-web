@@ -1,7 +1,7 @@
 import { park, polaroid } from '../assets/photos';
+import { PhotosData } from './data.types';
 
-/** TODO: будет круто еще и типизировать **/
-export const photosData = {
+export const photosData: PhotosData = {
   personal: {
     photo: park,
     description: 'Personal photos',
