@@ -17,12 +17,14 @@ export const Portfolio = () => {
           <a href={project.github} target="_blank">
             Github
           </a>
-          &nbsp;|&nbsp;
-          {/* TODO: isGlobalLinkExist && (знак | и дальше ссылка)*/}
+
           {isGlobalLinkExist === false ? null : (
-            <a href={project.global} target="_blank">
-              Link
-            </a>
+            <>
+              <span>&nbsp;|&nbsp;</span>
+              <a href={project.global} target="_blank">
+                Link
+              </a>
+            </>
           )}
         </div>
       </div>

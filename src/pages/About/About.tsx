@@ -4,13 +4,10 @@ import { links } from '../../data/linksData';
 import styles from './About.module.scss';
 
 export const About = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isSkillsOpen, setSkillsOpen] = useState(false);
 
   const handlerSetOpen = () => {
-    /* TODO: тут  prevValue не нужно, так как всё будет синхронно
-        можно () => setIsOpen(!isOpen)
-      */
-    setIsOpen((prevValue) => !prevValue);
+    setSkillsOpen((prevValueIsOpen) => !prevValueIsOpen);
   };
 
   return (
@@ -23,10 +20,10 @@ export const About = () => {
           Hire me!
         </a>{' '}
         <button type="button" className={styles.about__skills_button} onClick={handlerSetOpen}>
-          {isOpen ? 'Hide' : 'Show'} skills
+          {isSkillsOpen ? 'Hide' : 'Show'} skills
         </button>
       </p>
-      <div className={styles.about__skills} hidden={!isOpen && true}>
+      <div className={styles.about__skills} hidden={!isSkillsOpen && true}>
         <ul className={styles.about__skills_content}>
           <li>HTML</li>
           <li>SASS</li>
