@@ -1,4 +1,6 @@
-export const projectsData = [
+import { ProjectData } from './data.types';
+
+export const projectsData: ProjectData[] = [
   {
     name: 'Personal website',
     desc: 'You are here',

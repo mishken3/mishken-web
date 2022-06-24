@@ -1,10 +1,11 @@
 import React from 'react';
 
+import { ProjectData } from '../../data/data.types';
 import { projectsData } from '../../data/projectsData';
 import styles from './Portfolio.module.scss';
 
 export const Portfolio = () => {
-  const projectsComp = projectsData.map((project) => {
+  const projectsComp = projectsData.map((project: ProjectData) => {
     const isGlobalLinkExist = Object.keys(project).includes('global');
 
     return (
@@ -16,11 +17,14 @@ export const Portfolio = () => {
           <a href={project.github} target="_blank">
             Github
           </a>
-          &nbsp;|&nbsp;
+
           {isGlobalLinkExist === false ? null : (
-            <a href={project.global} target="_blank">
-              Link
-            </a>
+            <>
+              <span>&nbsp;|&nbsp;</span>
+              <a href={project.global} target="_blank">
+                Link
+              </a>
+            </>
           )}
         </div>
       </div>
