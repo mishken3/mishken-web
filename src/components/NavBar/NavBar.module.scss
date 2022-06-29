@@ -12,9 +12,9 @@
       flex-direction: row;
       justify-content: space-around;
     }
-  }
 
-  &__links > a:global.active {
-    color: $color__black_85;
+    &_active {
+      color: $color__black_85;
+    }
   }
 }
