@@ -4,6 +4,12 @@
   }
 }
 
+@mixin semi-phone {
+  @media (max-width: 475px) {
+    @content;
+  }
+}
+
 @mixin for-tablet-portrait-up {
   @media (max-width: 750px) {
     @content;
@@ -33,12 +39,3 @@
     @content;
   }
 }
-
-/*
-@media (max-width: 320px)
-@media (max-width: 415px)
-@media (max-width: 768px)
-@media (max-width: 992px)
-@media (max-width: 1200px)
-@media (min-width: 1200px)
-*/

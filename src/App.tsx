@@ -1,7 +1,6 @@
 import 'normalize.css';
 import './App.module.scss';
 
-import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import { Wrapper } from './components';

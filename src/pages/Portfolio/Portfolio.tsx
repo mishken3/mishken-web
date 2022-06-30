@@ -18,7 +18,7 @@ export const Portfolio = () => {
             Github
           </a>
 
-          {isGlobalLinkExist === false ? null : (
+          {isGlobalLinkExist && (
             <>
               <span>&nbsp;|&nbsp;</span>
               <a href={project.global} target="_blank">

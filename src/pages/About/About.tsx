@@ -23,19 +23,21 @@ export const About = () => {
           {isSkillsOpen ? 'Hide' : 'Show'} skills
         </button>
       </p>
-      <div className={styles.about__skills} hidden={!isSkillsOpen && true}>
-        <ul className={styles.about__skills_content}>
-          <li>HTML</li>
-          <li>SASS</li>
-          <li>JavaScript</li>
-          <li>TypeScript</li>
-          <li>React</li>
-          <li>Redux</li>
-          <li>React-Router</li>
-          <li>Linux</li>
-          <li>Git</li>
-        </ul>
-      </div>
+      {isSkillsOpen && (
+        <div className={styles.about__skills}>
+          <ul className={styles.about__skills_content}>
+            <li>HTML</li>
+            <li>SASS</li>
+            <li>JavaScript</li>
+            <li>TypeScript</li>
+            <li>React</li>
+            <li>Redux</li>
+            <li>React-Router</li>
+            <li>Linux</li>
+            <li>Git</li>
+          </ul>
+        </div>
+      )}
     </article>
   );
 };

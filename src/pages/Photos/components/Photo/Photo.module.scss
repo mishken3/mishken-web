@@ -23,12 +23,7 @@
   }
 
   &__description {
-    font-size: 12px;
+    font-size: 0.8rem;
     color: $color__black_50;
-
-    &:hover {
-      cursor: pointer;
-      color: $color__red;
-    }
   }
 }

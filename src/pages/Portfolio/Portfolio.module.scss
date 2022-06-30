@@ -10,6 +10,11 @@
 
     width: 100%;
 
+    &:last-child {
+      padding-bottom: 1rem;
+      border-bottom: 1px solid gainsboro;
+    }
+
     @include for-desktop {
       flex-direction: row;
     }
@@ -29,8 +34,11 @@
   border-right: 1px solid gainsboro;
   border-left: 1px solid gainsboro;
 
+  font-size: 1rem;
+
   @include for-desktop {
     width: 100%;
+    min-height: 10rem;
   }
 
   &__name {
@@ -46,20 +54,19 @@
 
     text-align: center;
     width: 70%;
-
-    font-size: 13px;
   }
 
   &__tools {
     margin: 0;
-    font-size: 13px;
   }
 
   &__links {
-    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
 
-    & > a:hover {
-      color: $color__red;
+    @include semi-phone {
+      justify-content: space-evenly;
     }
   }
 }

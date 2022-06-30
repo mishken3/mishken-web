@@ -5,6 +5,10 @@
     color: $color__red;
     text-decoration: underline;
 
+    &:hover {
+      color: $color__black_85;
+    }
+
     &::selection {
       color: $color__black_85;
     }
@@ -20,6 +24,10 @@
       outline: none;
       cursor: pointer;
       color: $color__red;
+
+      &:hover {
+        color: $color__black_85;
+      }
     }
 
     &_content {
