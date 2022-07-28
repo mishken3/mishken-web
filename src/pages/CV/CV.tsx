@@ -2,13 +2,6 @@ import { NavLink } from 'react-router-dom';
 
 import styles from './CV.module.scss';
 
-/**
- * TODO
- *
- * 1. Заменить все линки Resume -> на эту страницу
- * 2. Разобраться с background'ом
- */
-
 export const CV = () => (
   <div className={styles.page}>
     <header>
