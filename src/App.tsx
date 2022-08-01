@@ -4,13 +4,14 @@ import './App.module.scss';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import { Wrapper } from './components';
-import { About, Contacts, Main, NotFound, Photos, Portfolio } from './pages';
+import { About, Contacts, CV, Main, NotFound, Photos, Portfolio } from './pages';
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route path="*" element={<NotFound />} />
+        <Route path="cv" element={<CV />} />
 
         <Route path="/" element={<Wrapper />}>
           <Route index element={<Main />} />

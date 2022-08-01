@@ -1,0 +1,86 @@
+.page {
+  max-width: 960px;
+
+  margin: 0;
+
+  padding: 25px;
+  padding-top: 50px;
+
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+
+    text-transform: uppercase;
+  }
+
+  h3 {
+    text-decoration: underline;
+    padding: 0;
+    margin: 0;
+  }
+
+  h1,
+  h2 {
+    color: royalblue;
+    padding: 0;
+  }
+
+  p {
+    margin: 0.5rem 0;
+  }
+
+  a {
+    color: dodgerblue;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: royalblue;
+  }
+
+  ul {
+    padding-inline-start: 20px;
+  }
+
+  & main {
+    display: flex;
+  }
+
+  & main > section {
+    padding: 24px;
+  }
+
+  & footer {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.strong {
+  font-weight: 600;
+}
+
+.about {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+
+  border-bottom: 2px solid lightgray;
+}
+
+.about > div {
+  width: 200px;
+}
+
+.skills {
+  border-right: 2px solid lightgray;
+}

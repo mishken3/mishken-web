@@ -27,6 +27,9 @@ export const NavBar = () => {
         <NavLink className={getClassNames} to="/contacts">
           contacts
         </NavLink>
+        <NavLink className={getClassNames} to="/cv">
+          CV
+        </NavLink>
       </div>
     </div>
   );

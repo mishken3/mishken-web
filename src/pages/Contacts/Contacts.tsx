@@ -16,7 +16,7 @@ export const Contacts = () => (
         Resume
       </a>
       <a href="mailto:mishken3@gmail.com" target="_blank">
-        Email
+        mishken3@gmail.com
       </a>
     </div>
   </div>
