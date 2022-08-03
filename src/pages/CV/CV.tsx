@@ -47,7 +47,7 @@ export const CV = () => (
               <li>
                 <strong>TypeScript</strong>
               </li>
-              <li>Router</li>
+              <li>React-Router-DOM</li>
               <li>Custom hooks</li>
               <li>
                 <strong>Redux</strong>
@@ -129,15 +129,19 @@ export const CV = () => (
             </a>
           </h3>
           <p>
-            Калькулятор для конвертации USD в BTC и ETH. Курсы валют берутся в реальном времени.
-            Есть возможность ввода средств на баланс пользователя.
+            Калькулятор для конвертации USD в BTC или ETH. Курсы валют подтягиваются при каждом
+            взаимодействии пользователя с публичного API биржи.
           </p>
+          <p>Есть возможность ввода USD на баланс пользователя и конвертации в другие валюты.</p>
           <ul>
             <li>React</li>
             <li>Redux</li>
+            <li>React Hooks</li>
+            <li>React-Router-DOM</li>
             <li>TypeScript</li>
             <li>SASS</li>
             <li>Axios</li>
+            <li>GIT</li>
           </ul>
         </div>
 
@@ -147,14 +151,13 @@ export const CV = () => (
               Личный сайт
             </a>
           </h3>
-          <p>
-            Личный веб-сайт портфолио. Собраны все мои проекты и немного личной информации обо мне.
-          </p>
+          <p>Личный веб-сайт портфолио. Собраны все мои проекты и немного личной информации.</p>
           <ul>
             <li>React</li>
-            <li>Router</li>
+            <li>React-Router-DOM</li>
             <li>TypeScript</li>
             <li>SASS</li>
+            <li>GIT</li>
           </ul>
         </div>
 
