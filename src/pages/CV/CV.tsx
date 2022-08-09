@@ -10,12 +10,15 @@ export const CV = () => (
         <div>
           <p>Frontend developer</p>
           <p>Около полугода опыта коммерческой-фриланс разработки</p>
-          <p>
-            Прерыдущая работа менеджером по продажам научила меня грамотной постановке дедлайнов и
-            соблюдением их сроков.
-          </p>
         </div>
 
+        <div>
+          <p>
+            Предыдущая работа менеджером по продажам научила меня грамотной постановке дедлайнов и
+            соблюдением их сроков, а также стрессоустойчивости и внимательности к деталям клиентов
+            (оптическая индустрия).
+          </p>
+        </div>
         <div>
           <p>Нахожусь в Москве</p>
           <p>Рассматриваю преимущественно удалённую работу</p>
@@ -124,8 +127,24 @@ export const CV = () => (
           <li>Применение переиспользуемых компонентов</li>
           <li>Использование современных инструментов frontend-мира разработки</li>
         </ul>
-
         <h2>Проекты</h2>
+        <div className={styles.project}>
+          <h3>
+            <a href="https://cinema-rent.vercel.app/" target="_blank">
+              Cinema Rent
+            </a>
+          </h3>
+          <p>Сайт для аренды кинооборудования.</p>
+          <p>Сделан для друзей.</p>
+          <ul>
+            <li>React</li>
+            <li>TypeScript</li>
+            <li>SASS</li>
+            <li>GIT</li>
+            <li>SVG-анимации</li>
+            <li>Гардиентовые переходы фоновых фотографий</li>
+          </ul>
+        </div>
         <div className={styles.project}>
           <h3>
             <a href="https://blockchain-calculator.vercel.app/" target="_blank">
@@ -148,7 +167,6 @@ export const CV = () => (
             <li>GIT</li>
           </ul>
         </div>
-
         <div className={styles.project}>
           <h3>
             <a href="https://mishken.vercel.app/" target="_blank">
@@ -164,7 +182,6 @@ export const CV = () => (
             <li>GIT</li>
           </ul>
         </div>
-
         <h2>До frontend'а</h2>
         <div className={styles.project}>
           <h3>RETROSUPERFUTURE</h3>
@@ -177,7 +194,22 @@ export const CV = () => (
             <li>SMM</li>
           </ul>
         </div>
-
+        <div className={styles.project}>
+          <h3>Uniqlo</h3>
+          <p>Март 2017 - Май 2019</p>
+          <p>Старший продавец в японском ритейлере</p>
+          <ul>
+            <li>Управление персоналом</li>
+            <li>
+              Работа в Exel: составление графиков работы магазина (день, неделя, месяц),
+              планирование продаж определённого отдела.
+            </li>
+            <li>Отчётность в должности старшего кассира</li>
+            <li>
+              Документооборот с подрядчиками (Комус, Инкассации, отчётность для главного офиса).
+            </li>
+          </ul>
+        </div>
         <h2>Образование</h2>
         <div className={styles.strong}>
           <p>Московский энергетический институт (НИУ МЭИ)</p>
