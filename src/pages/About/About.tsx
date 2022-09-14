@@ -14,15 +14,21 @@ export const About = () => {
     <article className={styles.about}>
       <p>Привет! Я Миша, мне 24, а родом из Москвы.</p>
       <p>Я люблю футбол и бег, аналоговую фотографию, электронную и эксперементальную музыку.</p>
-      <p>
-        А ещё я front-end разработчик.{' '}
-        <a href={links.resume} target="_blank" className={styles.about__hire}>
-          Hire me!
-        </a>{' '}
-        <button type="button" className={styles.about__skills_button} onClick={handlerSetOpen}>
+      <div>
+        <p>А ещё я front-end разработчик:</p>
+        <span className={styles.raif}>Raiffeisen Bank</span>
+
+        <a hidden href={links.resume} target="_blank" className={styles.about__hire}>
+          <s>Hire me!</s>
+        </a>
+        <button
+          hidden
+          type="button"
+          className={styles.about__skills_button}
+          onClick={handlerSetOpen}>
           {isSkillsOpen ? 'Hide' : 'Show'} skills
         </button>
-      </p>
+      </div>
       {isSkillsOpen && (
         <div className={styles.about__skills}>
           <ul className={styles.about__skills_content}>

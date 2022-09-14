@@ -103,7 +103,6 @@ export const CV = () => (
           <p>
             Frontend курсы
             <a href="https://ru.hexlet.io/programs/frontend" target="_blank">
-              {' '}
               Hexlet.io
             </a>
           </p>
